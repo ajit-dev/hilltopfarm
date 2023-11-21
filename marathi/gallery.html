@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HillTop Goat Farm</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet"> -->
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script> -->
+    <style>
+        .button {
+            display: inline-block;
+            padding: 0.5em 1.0em;
+            border-radius: 4px;
+            background: #ffffff;
+            font-family: sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #000000;
+            margin: 10px;
+            -webkit-transition: background 0.3s;
+            -moz-transition: background 0.3s;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .button:active,
+        .button.is-checked {
+            background-color: rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        .button-group {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .button-group:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid article {
+            background-color: #FFFFFF;
+            display: block;
+            float: left;
+            margin: 1%;
+            width: 23%;
+        }
+
+        @media (max-width: 1024px) {
+            .grid article {
+                width: 31.3%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .grid article {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .grid article {
+                margin: 2% 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">लोड करत आहे...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="p-2 me-2">
+                        <img class="img-fluid" src="../img/HillTop-2.jpg" alt="चिन्ह" style="width: 190px;">
+                    </div>
+                    <!-- <h2 class="m-0 text-primary">Hill Top Farm</h2> -->
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                    class="fa fa-globe"></i></a>
+                            <div class="dropdown-menu rounded-0 m-0 dropdown-menu-end">
+                                <a href="../index.html" class="dropdown-item">English</a>
+                                <a href="../hindi/index.html" class="dropdown-item">हिंदी</a>
+                                <a href="../marathi/index.html" class="dropdown-item">मराठी</a>
+                            </div>
+                        </div>
+                        <a href="index.html" class="nav-item nav-link ">मुख्यपृष्ठ</a>
+                        <a href="about.html" class="nav-item nav-link ">आमच्याबद्दल</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="#" class="dropdown-item">Property List</a>
+                                <a href="#" class="dropdown-item">Property Type</a>
+                                <a href="#" class="dropdown-item">Property Agent</a>
+                            </div>
+                        </div> -->
+                        <a href="services.html" class="nav-item nav-link">सेवा</a>
+                        <a href="gallery.html" class="nav-item nav-link active">गॅलरी</a>
+                        <!--a href="enquiry.html" class="nav-item nav-link">Enquiry</a-->
+                        <a href="contact.html" class="nav-item nav-link">संपर्क करा</a>
+                    </div>
+                    <!-- <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a> -->
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">फोटो गॅलरी</h1>
+                    <nav aria-label="ब्रेडक्रंब अॅनिमेटेड फॅडइन">
+                        <ol class="breadcrumb text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">मुख्यपृष्ठ</a></li>
+                            <li class="breadcrumb-item text-body active" aria-current="page">गॅलरी</li>
+                        </ol>
+                    </nav>
+                    <p>आमच्या शेताच्या आणि शेळ्यांच्या दृश्य प्रवासात स्वतःला मग्न करा. मोहक प्रतिमा ब्राउझ करा ज्या
+                        आमच्या शेती जीवनाचे सार कॅप्चर करतात, मोहक शेळीच्या मुलांपासून ते निसर्गरम्य दृश्यांपर्यंत.</p>
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <img class="img-fluid" src="../img/slider/002.JPG" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Count Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s"
+            style="padding: 35px; visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+            <div class="container">
+                <div class="row g-3 counter">
+                    <div class="col-md-3">
+                        <div class="row g-0 align-items-center counter-row ">
+                            <div class="col-sm-4 col-4">
+                                <img class="img-fluid" src="../img/total.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 col-8 count">
+                                <h1>50+</h1>
+                                <p>एकूण संख्या</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row g-0 align-items-center counter-row">
+                            <div class="col-sm-4 col-4">
+                                <img class="img-fluid" src="../img/female.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 col-8 count">
+                                <h1>३०+</h1>
+                                <p>मादींची संख्या</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row g-0 align-items-center counter-row">
+                            <div class="col-sm-4 col-4">
+                                <img class="img-fluid" src="../img/male.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 col-8 count">
+                                <h1>3</h1>
+                                <p>नरांची संख्या</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row g-0 align-items-center counter-row">
+                            <div class="col-sm-4 col-4">
+                                <img class="img-fluid" src="../img/kids.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 col-8 count">
+                                <h1>20+</h1>
+                                <p>पिल्लांची संख्या</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Count End -->
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 800px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">फोटो गॅलरी</h1>
+                    <p>आमच्या संस्मरणीय क्षणांचे दृश्य प्रदर्शन आणि आमच्या शेत आणि शेळ्यांचे सौंदर्य एक्सप्लोर करा. एक
+                        चित्र हजार शब्दांचे आहे.</p>
+                </div>
+                <div class="button-group filters-button-group">
+                    <button class="button is-checked" data-filter="*">सर्व</button>
+                    <button class="button" data-filter=".boer">बोअर</button>
+                    <button class="button" data-filter=".beetal">बीटल</button>
+                    <button class="button" data-filter=".osmanabadi">उस्मानाबादी</button>
+                </div>
+
+                <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid"
+                    style="position: relative; height: 2053.66px;">
+                    <article class="boer" style="position: absolute; left: 0px; top: 0px;">
+                        <img src="../img/boer/1.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 278px; top: 0px;">
+                        <img src="../img/osmanabadi/1.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 557px; top: 0px;">
+                        <img src="../img/boer/2.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 836px; top: 0px;">
+                        <img src="../img/osmanabadi/pexels-mwabonje-ringa-4225572.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 0px; top: 193px;">
+                        <img src="../img/boer/3.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 278px; top: 214px;">
+                        <img src="../img/osmanabadi/pexels-brenda-timmermans-58914.jpg" class="img-responsive">
+                    </article>
+                    <article class=" boer" style="position: absolute; left: 557px; top: 278px;">
+                        <img src="../img/boer/4.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 836px; top: 343px;">
+                        <img src="../img/osmanabadi/2.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 0px; top: 387px;">
+                        <img src="../img/osmanabadi/3.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 557px; top: 472px;">
+                        <img src="../img/boer/5.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 278px; top: 622px;">
+                        <img src="../img/boer/6.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 836px; top: 750px;">
+                        <img src="../img/osmanabadi/1698674977618.jpg" class="img-responsive">
+                    </article>
+                    <article class="beetal" style="position: absolute; left: 0px; top: 794px;">
+                        <img src="../img/beetal/beetal.webp" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 278px; top: 815px;">
+                        <img src="../img/osmanabadi/pexels-albin-biju-9366108.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 557px; top: 879px;">
+                        <img src="../img/boer/pexels-los-muertos-crew-8838137.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 836px; top: 965px;">
+                        <img src="../img/osmanabadi/4.jpg" class="img-responsive">
+                    </article>
+                    <article class="beetal" style="position: absolute; left: 278px; top: 1009px;">
+                        <img src="../img/lsc.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 557px; top: 1073px;">
+                        <img src="../img/boer/7.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 0px; top: 1073px;">
+                        <img src="../img/osmanabadi/pexels-nandhu-kumar-1011629.jpg" class="img-responsive">
+                    </article>
+                    <article class="beetal" style="position: absolute; left: 278px; top: 1202px;">
+                        <img src="../img/cna1.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 0px; top: 1266px;">
+                        <img src="../img/boer/8.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 836px; top: 1372px;">
+                        <img src="../img/bs1.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 0px; top: 1460px;">
+                        <img src="../img/osmanabadi/1698674977432.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 557px; top: 1480px;">
+                        <img src="../img/bs.jpg" class="img-responsive">
+                    </article>
+
+                    <article class="boer" style="position: absolute; left: 278px; top: 1495px;">
+                        <img src="../img/boer/pexels-chris-f-3725009.jpg" class="img-responsive">
+                    </article>
+                    <article class="osmanabadi" style="position: absolute; left: 557px; top: 1673px;">
+                        <img src="../img/osmanabadi/1698674977352.jpg" class="img-responsive">
+                    </article>
+                    <article class="beetal" style="position: absolute; left: 0px; top: 1675px;">
+                        <img src="../img/beetal/1698674977255.jpg" class="img-responsive">
+                    </article>
+                    <article class="boer" style="position: absolute; left: 836px; top: 1687px;">
+                        <img src="../img/boer/StockSnap_0QJJYBAVZ1.jpg" class="img-responsive">
+                    </article>
+                    <article class="beetal" style="position: absolute; left: 278px; top: 1689px;">
+                        <img src="../img/beetal/1698674977650.jpg" class="img-responsive">
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-0 mt-0 wow fadeIn" data-wow-delay="0.1s"
+            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">संपर्कात रहाण्यासाठी</h5>
+                        <div class="mb-2 row">
+                            <div class="col-sm-auto"><i class="fa fa-map-marker-alt"></i></div>
+                            <div class="col-sm">मेन रोड, पळशिवणे. ता. भुदरगड, कोल्हापूर.</div>
+                        </div>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+९१ ८८९८२५७५५५</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>HillTopfarmindia@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">द्रुत दुवे</h5>
+                        <a class="btn btn-link text-white-50" href="index.html">मुख्यपृष्ठ</a>
+                        <a class="btn btn-link text-white-50" href="about.html">आमच्याबद्दल</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">आमच्याशी संपर्क साधा</a>
+                        <a class="btn btn-link text-white-50" href="services.html">आमच्या सेवा</a>
+                        <a class="btn btn-link text-white-50" href="gallery.html">गॅलरी</a>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">फोटो गॅलरी</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1 mb-2" src="../img/boer/1.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/osmanabadi/4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1 mb-2" src="../img/osmanabadi/3.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/boer/4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1 mb-2" src="../img/osmanabadi/1.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/boer/6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">वृत्तपत्र</h5>
+                        <p>तुमच्या इनबॉक्समध्ये वितरीत केलेल्या फार्म लाइफच्या डोससाठी आमच्या वृत्तपत्राची सदस्यता घ्या.
+                        </p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="आपला ई - मेल">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">साइनअप करा</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            © <a class="border-bottom" href="#">हिलटॉप गोट फार्म</a> , सर्व हक्क राखीव.
+
+                            <a class="border-bottom" href="https://htmlcodex.com">हिलटॉप गोट
+                                फार्मद्वारे</a><!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            डिझाइन केलेले<a class="border-bottom" href="https://htmlcodex.com"></a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">होम </a>
+                                <a href="">कुकीज </a>
+                                <a href="">मदत </a>
+                                <a href="">FQA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="display: none;"><i
+                class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script
+        src="https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007714979/custom/page/hack-a-thon-3/masonry.min.min.js"></script>
+    <script
+        src="https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007849180/custom/page/hack-a-thon-3/isotope.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script>
+        $(function () {
+            var $grid = $('.grid').isotope({
+                itemSelector: 'article'
+            });
+
+            // filter buttons
+            $('.filters-button-group').on('click', 'button', function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+            });
+            $('.button-group').each(function (i, buttonGroup) {
+                var $buttonGroup = $(buttonGroup);
+                $buttonGroup.on('click', 'button', function () {
+                    $buttonGroup.find('.is-checked').removeClass('is-checked');
+                    $(this).addClass('is-checked');
+                });
+            });
+        });
+
+        // debounce so filtering doesn't happen every millisecond
+        function debounce(fn, threshold) {
+            var timeout;
+            return function debounced() {
+                if (timeout) {
+                    clearTimeout(timeout);
+                }
+                function delayed() {
+                    fn();
+                    timeout = null;
+                }
+                timeout = setTimeout(delayed, threshold || 100);
+            }
+        }
+
+        $(window).bind("load", function () {
+            $('#all').click();
+        });
+    </script>
+</body>
+
+</html>
